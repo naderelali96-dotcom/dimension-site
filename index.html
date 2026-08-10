@@ -7,10 +7,13 @@
 <title>Dimension — Private Loft Barbershop in Montreal</title>
 <meta name="description" content="A private loft barbershop in Saint-Henri, Montreal. Precision haircuts, fades, beard work and hot towel shaves by appointment. Book online." />
 <link rel="canonical" href="https://dimensionmtl.com/" />
+<link rel="alternate" hreflang="en-CA" href="https://dimensionmtl.com/" />
+<link rel="alternate" hreflang="fr-CA" href="https://dimensionmtl.com/fr" />
+<link rel="alternate" hreflang="x-default" href="https://dimensionmtl.com/" />
 <meta name="theme-color" content="#F0EEE9" />
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Dimension" />
@@ -22,7 +25,7 @@
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<link rel="preload" as="image" href="assets/hero-poster.jpg" />
+<link rel="preload" as="image" href="/assets/hero-poster.jpg" />
 
 <script type="application/ld+json">
 {
@@ -221,6 +224,16 @@
     text-transform: uppercase; color: rgba(10,10,10,0.4);
   }
 
+  /* ── LANG TOGGLE ── */
+  .lang-toggle { display: flex; align-items: center; gap: 8px; }
+  .lang-link {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(10,10,10,0.4); transition: color 0.25s ease;
+  }
+  .lang-link:hover { color: #0a0a0a; }
+  .lang-link.active { color: #0a0a0a; font-weight: 500; }
+  .lang-sep { font-size: 11px; color: rgba(10,10,10,0.2); }
+
   /* ── HOURS ── */
   .hours { margin-bottom: 36px; max-width: 340px; }
   .hours-row {
@@ -331,7 +344,13 @@ window.__squireLoaded = null;
       </g>
     </svg>
   </a>
-  <div class="book-cta-slot"></div>
+  <div class="book-cta-slot">
+    <div class="lang-toggle">
+      <a href="/" class="lang-link active" aria-current="page">EN</a>
+      <span class="lang-sep">/</span>
+      <a href="/fr" class="lang-link" hreflang="fr-CA">FR</a>
+    </div>
+  </div>
 </header>
 
 <div class="mobile-menu">
@@ -341,8 +360,8 @@ window.__squireLoaded = null;
 </div>
 
 <section class="hero" style="padding-top:0; max-width:none; margin:0;">
-  <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
-    <source src="assets/hero.mp4" type="video/mp4" />
+  <video autoplay muted loop playsinline preload="auto" poster="/assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+    <source src="/assets/hero.mp4" type="video/mp4" />
   </video>
   <div class="hero-content">
     <h1 class="headline">
@@ -360,21 +379,21 @@ window.__squireLoaded = null;
   <div class="section-label"><span class="line-accent"></span><span>The Team</span></div>
   <div class="team-grid">
     <div class="team-card">
-      <div class="team-photo-frame"><img class="team-photo" width="1000" height="1000" loading="lazy" decoding="async" src="assets/nader.jpg" alt="Nader, barber at Dimension Montreal" /></div>
+      <div class="team-photo-frame"><img class="team-photo" width="1000" height="1000" loading="lazy" decoding="async" src="/assets/nader.jpg" alt="Nader, barber at Dimension Montreal" /></div>
       <div class="team-card-body">
         <h4>Nader</h4>
         <p class="bio">Nader loves a good conversation just as much as a clean line. He pays close attention to every detail, from the first consultation to the final trim, so you leave looking exactly how you pictured it.</p>
       </div>
     </div>
     <div class="team-card">
-      <div class="team-photo-frame"><img class="team-photo" width="1000" height="1000" loading="lazy" decoding="async" src="assets/tony.jpg" alt="Tony, barber at Dimension Montreal" /></div>
+      <div class="team-photo-frame"><img class="team-photo" width="1000" height="1000" loading="lazy" decoding="async" src="/assets/tony.jpg" alt="Tony, barber at Dimension Montreal" /></div>
       <div class="team-card-body">
         <h4>Tony</h4>
         <p class="bio">Tony keeps things light and easygoing while staying precise with every cut. He listens closely during consultations and always delivers exactly what you asked for.</p>
       </div>
     </div>
     <div class="team-card">
-      <div class="team-photo-frame"><img class="team-photo" width="1000" height="1000" loading="lazy" decoding="async" src="assets/ralph.jpg" alt="Ralph, barber at Dimension Montreal" /></div>
+      <div class="team-photo-frame"><img class="team-photo" width="1000" height="1000" loading="lazy" decoding="async" src="/assets/ralph.jpg" alt="Ralph, barber at Dimension Montreal" /></div>
       <div class="team-card-body">
         <h4>Ralph</h4>
         <p class="bio">Ralph has a sharp eye for detail and an easy way with conversation. He takes his time with every cut and makes sure nothing gets overlooked.</p>
