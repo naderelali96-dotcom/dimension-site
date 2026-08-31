@@ -2,6 +2,34 @@
 <html lang="fr-CA">
 <head>
 <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18129690840"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18129690840');
+</script>
+
+<!-- Dimension: report Squire booking panel opens to Google Ads -->
+<script>
+(function () {
+  var fired = false;
+  document.addEventListener('click', function (event) {
+    if (fired || !event.composedPath) return;
+    var path = event.composedPath();
+    for (var i = 0; i < path.length; i++) {
+      if (path[i] && path[i].id === 'squire-book-button') {
+        fired = true;
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18129690840/bYfmCJnDpescENjB9MRD'
+        });
+        break;
+      }
+    }
+  }, true);
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Dimension — Barbier privé en loft à Montréal</title>
